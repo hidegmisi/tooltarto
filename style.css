@@ -34,6 +34,15 @@
     .empty {
         display: none;
     }
+    .catcon {
+        margin: 15px;
+    }
+    #catcon1 {
+        margin-left: 0px;
+    }
+    #catcon3 {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -112,10 +121,6 @@ img {
     padding-top: 0px
 }
 
-.catcon:hover ul li{
-    display: block;
-}
-
 #catcon1 {
     grid-area: filter1;
 }
@@ -143,7 +148,6 @@ ul {
 
 ul li , ul span{
     padding: 5px;
-    padding-left: 10px;
     display: block;
     font-size: 14px;
     width: 100%;
@@ -152,7 +156,9 @@ ul li , ul span{
 }
 
 ul li {
-    display: none;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .item {
@@ -178,12 +184,9 @@ ul li {
     overflow: hidden;
 }
 
-.title {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #d0a4c0;
-    padding-top: 10%;
-    font-weight: 800;
+.logo img {
+    width: 30%;
+    height: auto;
 }
 
 .info {
