@@ -50,6 +50,9 @@
     .empty {
         display: inherit !important;
     }
+    .about {
+        width: 60% !important;
+    }
 }
 
 
@@ -68,7 +71,6 @@ body {
 img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .empty {
@@ -99,7 +101,7 @@ img {
 
 .logo, .about {
     padding: 20px 0px;
-    width: 60%;
+    width: 100%;
 }
 
 .logo {
@@ -108,14 +110,6 @@ img {
 
 .about {
     padding-top: 0px
-}
-
-.catcon {
-    text-align: left;
-    background-color: #d0a4c0;
-    min-height: 37px;
-    cursor: pointer;
-    position: relative;
 }
 
 .catcon:hover ul li{
@@ -141,9 +135,10 @@ ul {
     margin-block-end: 0;
 
     padding: 5px;
-    position: absolute;
     background-color: #d0a4c0;
     width: 100%;
+
+    margin: 5px 0px
 }
 
 ul li , ul span{
