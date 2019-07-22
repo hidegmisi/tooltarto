@@ -3,11 +3,11 @@
 $("#catcon1").hover( () => {
     anime.timeline({
         targets: "#catcon1 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "0",
-        padding: "5px"
+        padding: "5px",
     })
     .add({
         duration: "200",
@@ -16,7 +16,7 @@ $("#catcon1").hover( () => {
 }, () => {
     anime.timeline({
         targets: "#catcon1 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "200",
@@ -24,18 +24,18 @@ $("#catcon1").hover( () => {
     })
     .add({
         duration: "0",
-        padding: "0px"
+        padding: "0px",
     })
 });
 
 $("#catcon2").hover( () =>{
     anime.timeline({
         targets: "#catcon2 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "0",
-        padding: "5px"
+        padding: "5px",
     })
     .add({
         duration: "200",
@@ -44,7 +44,7 @@ $("#catcon2").hover( () =>{
 }, () => {
     anime.timeline({
         targets: "#catcon2 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "200",
@@ -52,34 +52,34 @@ $("#catcon2").hover( () =>{
     })
     .add({
         duration: "0",
-        padding: "0px"
+        padding: "0px",
     })
 })
 
 $("#catcon3").hover( () =>{
     anime.timeline({
         targets: "#catcon3 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "0",
-        padding: ["0px", "5px"]
+        padding: "5px",
     })
     .add({
         duration: "200",
-        height: ["0px", "17px"],
+        height: "17px",
     })
 }, () => {
     anime.timeline({
         targets: "#catcon3 ul li",
-        easing: "linear"
+        easing: "linear",
     })
     .add({
         duration: "200",
-        height: ["17px", "0px"],
+        height: "0px",
     })
     .add({
         duration: "0",
-        padding: ["5px", "0px"]
+        padding: "0px",
     })
 })
