@@ -1,72 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
 
-@media screen and (min-width: 500px) {
-    .main-container{
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: auto !important;
-        grid-template-areas: 
-        "header header"
-        "filter1 filter1"
-        "filter2 filter2"
-        "filter3 filter3"
-        "main main" !important;
-    }
-
-    .img {
-        height: 16vh !important;
-    }
-    .empty {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .main-container{
-        grid-template-columns: repeat(3, 1fr)!important;
-        grid-template-rows: auto !important;
-        grid-template-areas: 
-        
-        "header header header"
-        "filter1 filter2 filter3"
-        "main main main" !important;
-        margin: 0px 10% !important;
-    }
-    .empty {
-        display: none;
-    }
-    .catcon {
-        margin: 15px;
-    }
-    #catcon1 {
-        margin-left: 0px;
-    }
-    #catcon3 {
-        margin-right: 0px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .main-container{
-        grid-template-columns: auto !important;
-        grid-template-rows: auto !important;
-        grid-template-areas: 
-        
-        "header header header header"
-        "filter1 filter2 filter3 empty"
-        "main main main main" !important;
-        margin: 0px 10% !important;
-    }
-    .empty {
-        display: inherit !important;
-    }
-    .about {
-        width: 60% !important;
-    }
-}
-
-
 html {
     font-family: 'Lato';
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 div {
@@ -133,8 +73,7 @@ img {
     grid-area: filter3;
 }
 
-ul {
-    list-style: none;
+select {
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -146,7 +85,7 @@ ul {
     margin: 5px 0px
 }
 
-ul li , ul span{
+option label{
     padding: 5px;
     display: block;
     font-size: 14px;
@@ -155,7 +94,7 @@ ul li , ul span{
     z-index: 2;
 }
 
-ul li {
+option {
     height: 0;
     padding: 0;
     overflow: hidden;
@@ -172,7 +111,7 @@ ul li {
     background-color: #fff;
 }
 
-.img, .title, .info, .descript {
+.img, .title, .info, .description {
     text-align: left;
     width: calc(100% - 10px);
     vertical-align: top;
@@ -196,7 +135,7 @@ ul li {
     font-weight: 600;
 }
 
-.descript{
+.description {
     font-size: 14px;
     width: calc(100% - 20px)
 }
@@ -207,4 +146,68 @@ ul li {
 
 .selected {
     background-color: blue;
+}
+
+@media screen and (min-width: 500px) {
+    .main-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "filter1 filter1"
+        "filter2 filter2"
+        "filter3 filter3"
+        "main main";
+    }
+
+    .img {
+        height: 16vh;
+    }
+    .empty {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        
+        "header header header"
+        "filter1 filter2 filter3"
+        "main main main";
+        margin: 0px 10%;
+    }
+    .empty {
+        display: none;
+    }
+    .catcon {
+        margin: 15px;
+    }
+    #catcon1 {
+        margin-left: 0px;
+    }
+    #catcon3 {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        
+        "header header header header"
+        "filter1 filter2 filter3 empty"
+        "main main main main";
+        margin: 0px 10%;
+    }
+    .empty {
+        display: inherit;
+    }
+    .about {
+        width: 60%;
+    }
 }
