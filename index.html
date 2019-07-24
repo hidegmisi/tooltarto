@@ -6,330 +6,459 @@
     <base target="_blank">
 </head>
 <body>
-    <div class="main-container">
-        <div class="header">
-            <div class="logo"><img src="ps/logo.png"></div>
-            <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Amet nisl suscipit adipiscing bibendum. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. </div>
-        </div>
-        <div class="catcon" id="catcon1">
-            <select> 
-                <option>Mire használható?</option>
-                <option class="cat" id="ff">adatkezelés</option>
-                <option class="cat" id="adatigénylés">adatigénylés</option>
-                <option class="cat" id="keresés">keresés</option>
-                <option class="cat" id="vizualizáció">vizualizáció</option>
-                <option class="cat" id="idővonal">idővonal</option>
+    <header class="main">
+        <div class="logo"><img src="ps/logo.png" alt=""></div>
+        <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Amet nisl suscipit adipiscing bibendum. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. </p>
+    </header>
+    <ul class="categories">
+        <li>
+            <label for="type">Mire használható?</label>
+            <select id="type"> 
+                <option class="cat" value="összes" selected="selected">összes</option>
+                <option class="cat" value="adatkezelés">adatkezelés</option>
+                <option class="cat" value="adatigénylés">adatigénylés</option>
+                <option class="cat" value="keresés">keresés</option>
+                <option class="cat" value="vizualizáció">vizualizáció</option>
+                <option class="cat" value="idővonal">idővonal</option>
             </select>
-        </div>
-        <div class="catcon" id="catcon2">
-            <select>
-                <option>Mennyibe kerül?</option>
+        </li>
+        <li>
+            <label for="cost">Ingyenes?</label>
+            <select id="cost">
+                <option class="cat" value="összes" selected="selected">összes</option>
                 <option class="cat" id="ingyenes">ingyenes</option>
                 <option class="cat" id="fizetős">fizetős</option>
                 <option class="cat" id="ingyenes/fizetős">ingyenes/fizetős</option>
             </select>
-        </div>
-        <div class="catcon" id="catcon3">
-            <select>
-                <option>Hol készült</option>
+        </li>
+        <li>
+            <label for="where">Hol készült?</label>
+            <select id="where">
+                <option class="cat" value="összes" selected="selected">összes</option>
                 <option class="cat" id="magyar">magyar</option>
                 <option class="cat" id="külföldi">külföldi</option>
             </select>
-        </div>
-        <div class="empty"></div>
-
-        <div>
-            <div class="img"><a href="https://carto.com/"><img src="ps/carto_ps.png"></a></div>
-            <div class="title"><a href="https://carto.com/">Carto</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+    </ul>
+    <ul class="tools">
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://carto.com/">
+                    <img src="ps/carto_ps.png">
+                    <h2>Carto</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Carto</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="http://www.crcb.eu/?cat=6"><img src="ps/crcb_ps.png"></a></div>
-            <div class="title"><a href="http://www.crcb.eu/?cat=6">CRCB Databases</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="http://www.crcb.eu/?cat=6">
+                    <img src="ps/crcb_ps.png">
+                    <h2>CRCB Databases</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Corruption Research Center Budapest</div>
                 <div class="release">Mikor indult: 2013</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.datawrapper.de/"><img src="ps/datawrapper_ps.png"></a></div>
-            <div class="title"><a href="https://www.datawrapper.de/">Datawrapper</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.datawrapper.de/">
+                    <img src="ps/datawrapper_ps.png">
+                    <h2>Datawrapper</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Datawrapper GmbH</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://evoks.hu/"><img src="ps/evoks_ps.png"></a></div>
-            <div class="title"><a href="https://evoks.hu/">Evoks</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://evoks.hu/">
+                    <img src="ps/evoks_ps.png">
+                    <h2>Evoks</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2015</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="http://www.fizettem.hu/"><img src="ps/fizettem_ps.png"></a></div>
-            <div class="title"><a href="http://www.fizettem.hu/">Fizettem</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="http://www.fizettem.hu/">
+                    <img src="ps/fizettem_ps.png">
+                    <h2>Fizettem</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2013</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://flourish.studio/"><img src="ps/flourish_ps.png"></a></div>
-            <div class="title"><a href="https://flourish.studio/">Flourish</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://flourish.studio/">
+                    <img src="ps/flourish_ps.png">
+                    <h2>Flourish</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Kiln Enterprises</div>
                 <div class="release">Mikor indult: 2016</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://datastudio.google.com/navigation/reporting"><img src="ps/googledatastudio_ps.png"></a></div>
-            <div class="title"><a href="https://datastudio.google.com/navigation/reporting">Google Data Studio</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://datastudio.google.com/">
+                    <img src="ps/googledatastudio_ps.png">
+                    <h2>Google Data Studio</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Google</div>
                 <div class="release">Mikor indult: 2015</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.google.com/earth/"><img src="ps/googleearth_ps.png"></a></div>
-            <div class="title"><a href="https://www.google.com/earth/">Google Earth</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.google.com/earth/">
+                    <img src="ps/googleearth_ps.png">
+                    <h2>Google Earth</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Google</div>
                 <div class="release">Mikor indult: 2001</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://import.io"><img src="ps/import_ps.png"></a></div>
-            <div class="title"><a href="https://import.io">Import.io</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://import.io">
+                    <img src="ps/import_ps.png">
+                    <h2>Import.io</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: import.io</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://infogram.com"><img src="ps/infogram_ps.png"></a></div>
-            <div class="title"><a href="https://infogram.com">Infogram</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://infogram.com">
+                    <img src="ps/infogram_ps.png">
+                    <h2>Infogram</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Infogram</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://juxtapose.knightlab.com/"><img src="ps/juxtapose_ps.png"></a></div>
-            <div class="title"><a href="https://juxtapose.knightlab.com/">Juxtapose</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://juxtapose.knightlab.com/">
+                    <img src="ps/juxtapose_ps.png">
+                    <h2>Juxtapose</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Northwestern University Knight Lab</div>
                 <div class="release">Mikor indult: 2011</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://kmonitor.hu/adatbazis"><img src="ps/kmonitor_ps.png"></a></div>
-            <div class="title"><a href="https://kmonitor.hu/adatbazis">K-Monitor</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://kmonitor.hu/adatbazis">
+                    <img src="ps/kmonitor_ps.png">
+                    <h2>K-Monitor</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: K-Monitor</div>
                 <div class="release">Mikor indult: 2007</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://kepler.gl/"><img src="ps/kepler_ps.png"></a></div>
-            <div class="title"><a href="https://kepler.gl/">Kepler</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://kepler.gl/">
+                    <img src="ps/kepler_ps.png">
+                    <h2>Kepler</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: vis.gl</div>
                 <div class="release">Mikor indult: 2018</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://kimittud.atlatszo.hu/"><img src="ps/kimittud_ps.png"></a></div>
-            <div class="title"><a href="https://kimittud.atlatszo.hu/">KiMitTud?</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://kimittud.atlatszo.hu/">
+                    <img src="ps/kimittud_ps.png">
+                    <h2>KiMitTud</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://atlatszo.hu/magyarleaks/"><img src="ps/magyarleaks_ps.png"></a></div>
-            <div class="title"><a href="https://atlatszo.hu/magyarleaks/">MagyarLeaks</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://atlatszo.hu/magyarleaks/">
+                    <img src="ps/magyarleaks_ps.png">
+                    <h2>MagyarLeaks</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2011</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.mapbox.com"><img src="ps/mapbox_ps.png"></a></div>
-            <div class="title"><a href="https://www.mapbox.com">Mapbox</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.mapbox.com">
+                    <img src="ps/mapbox_ps.png">
+                    <h2>Mapbox</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Mapbox</div>
                 <div class="release">Mikor indult: 2010</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://mertek.atlatszo.hu/allamihirdetesek/"><img src="ps/mertek_ps.png"></a></div>
-            <div class="title"><a href="https://mertek.atlatszo.hu/allamihirdetesek/">Állami hirdetések - Mérték</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://mertek.atlatszo.hu/allamihirdetesek/">
+                    <img src="ps/mertek_ps.png">
+                    <h2>Állami hirdetések - Mérték</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2019</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://nertravel.atlatszo.hu/"><img src="ps/nertravel_ps.png"></a></div>
-            <div class="title"><a href="https://nertravel.atlatszo.hu/">NER Travel</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://nertravel.atlatszo.hu/">
+                    <img src="ps/nertravel_ps.png">
+                    <h2>NER Travel</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
                 <div class="release">Mikor indult: 2018</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="http://openrefine.org/"><img src="ps/openrefine_ps.png"></a></div>
-            <div class="title"><a href="http://openrefine.org/">Open Refine</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="http://openrefine.org/">
+                    <img src="ps/openrefine_ps.png">
+                    <h2>Open Refine</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Metaweb Technologies</div>
                 <div class="release">Mikor indult: 2010</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://plotdb.com/"><img src="ps/plotdb_ps.png"></a></div>
-            <div class="title"><a href="https://plotdb.com/">PlotDB</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://plotdb.com/">
+                    <img src="ps/plotdb_ps.png">
+                    <h2>PlotDB</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: PlotDB</div>
                 <div class="release">Mikor indult: 2016</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://plot.ly/"><img src="ps/plotly_ps.png"></a></div>
-            <div class="title"><a href="https://plot.ly/">Plotly</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://plot.ly/">
+                    <img src="ps/plotly_ps.png">
+                    <h2>Plotly</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Plotly</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://qgis.org/hu/site/"><img src="ps/qgis_ps.png"></a></div>
-            <div class="title"><a href="https://qgis.org/hu/site/">Qgis</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://qgis.org/hu/site/">
+                    <img src="ps/qgis_ps.png">
+                    <h2>Qgis</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: QGIS Development Team</div>
-                <div class="release">Mikor indult: 2018</div>
+                <div class="release">Mikor indult: 2002</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://rawgraphs.io/"><img src="ps/rawgraphs_ps.png"></a></div>
-            <div class="title"><a href="https://rawgraphs.io/">RAWGraphs</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://rawgraphs.io//">
+                    <img src="ps/rawgraphs_ps.png">
+                    <h2>RAWGraphs</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: DensityDesign</div>
-                <div class="release">Mikor indult: 2018</div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.redflags.eu/?lang=hu"><img src="ps/redflags_ps.png"></a></div>
-            <div class="title"><a href="https://www.redflags.eu/?lang=hu">Red Flags</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
-            <div class="info">
-                <div class="creator">Készítette: K-monitor</div>
-                <div class="release">Mikor indult: 2018</div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://storymap.knightlab.com/"><img src="ps/storymap_ps.png"></a></div>
-            <div class="title"><a href="https://storymap.knightlab.com/">Storymap JS</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
-            <div class="info">
-                <div class="creator">Készítette: Northwestern University Knight Lab</div>
-                <div class="release">Mikor indult: 2012</div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.sutori.com/"><img src="ps/sutori_ps.png"></a></div>
-            <div class="title"><a href="https://www.sutori.com/">Sutori</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
-            <div class="info">
-                <div class="creator">Készítette: Sutori</div>
                 <div class="release">Mikor indult: 2013</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://adat.atlatszo.hu/szechenyi2020/"><img src="ps/szechenyi2020_ps.png"></a></div>
-            <div class="title"><a href="https://adat.atlatszo.hu/szechenyi2020/">Széchenyi 2020</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.redflags.eu/?lang=hu">
+                    <img src="ps/redflags_ps.png">
+                    <h2>Red Flags</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator">Készítette: K-monitor</div>
+                <div class="release">Mikor indult: 2015</div>
+            </div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://storymap.knightlab.com/">
+                    <img src="ps/storymap_ps.png">
+                    <h2>Storymap JS</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator">Készítette: Northwestern University Knight Lab</div>
+                <div class="release">Mikor indult: 2013</div>
+            </div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.sutori.com/">
+                    <img src="ps/sutori_ps.png">
+                    <h2>Sutori</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator">Készítette: Sutori</div>
+                <div class="release">Mikor indult: 2016</div>
+            </div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://adat.atlatszo.hu/szechenyi2020/">
+                    <img src="ps/szechenyi2020_ps.png">
+                    <h2>Széchenyi 2020</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
-                <div class="release">Mikor indult: 2012</div>
+                <div class="release">Mikor indult: 2015</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://www.tableau.com/"><img src="ps/tableau_ps.png"></a></div>
-            <div class="title"><a href="https://www.tableau.com/">Tableau</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://www.tableau.com/">
+                    <img src="ps/tableau_ps.png">
+                    <h2>Tableau</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Tableau Software</div>
                 <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://tabula.technology/"><img src="ps/tabula_ps.png"></a></div>
-            <div class="title"><a href="https://tabula.technology/">Tabula</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://tabula.technology/">
+                    <img src="ps/tabula_ps.png">
+                    <h2>Tabula</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Manuel Aristarán, Mike Tigas</div>
-                <div class="release">Mikor indult: 2018</div>
+                <div class="release">Mikor indult: 2013</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://taokereso.atlatszo.hu/"><img src="ps/taokereso_ps.png"></a></div>
-            <div class="title"><a href="https://taokereso.atlatszo.hu/">Tao-kereső</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://taokereso.atlatszo.hu/">
+                    <img src="ps/taokereso_ps.png">
+                    <h2>Tao-kereső</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
-                <div class="release">Mikor indult: 2018</div>
+                <div class="release">Mikor indult: 2011</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://timeline.knightlab.com/"><img src="ps/timeline_ps.png"></a></div>
-            <div class="title"><a href="https://timeline.knightlab.com/">Timeline JS</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://timeline.knightlab.com/">
+                    <img src="ps/timeline_ps.png">
+                    <h2>Timeline JS</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: Northwestern University Knight Lab</div>
-                <div class="release">Mikor indult: 2018</div>
+                <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><a href="https://uvegzseb.hu/"><img src="ps/uvegzseb_ps.png"></a></div>
-            <div class="title"><a href="https://uvegzseb.hu/">Üvegzseb</a></div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</div>
+        </li>
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+            <header>
+                <a href="https://uvegzseb.hu/">
+                    <img src="ps/uvegzseb_ps.png">
+                    <h2>Üvegzseb</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
             <div class="info">
                 <div class="creator">Készítette: atlatszo.hu</div>
-                <div class="release">Mikor indult: 2018</div>
+                <div class="release">Mikor indult: 2012</div>
             </div>
-        </div>
-        
-    </div>
+        </li>
+    </ul>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="js.js"></script>
+    <script src="script.js"></script>
 </body>

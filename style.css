@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
 
+/* --- general ----------------------------------------------------------- */
+
 html {
     font-family: 'Lato';
 }
@@ -9,8 +11,14 @@ a {
     text-decoration: inherit;
 }
 
-div {
-    border-radius: px;
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+li {
+    list-style: none;
 }
 
 body {
@@ -20,32 +28,23 @@ body {
 img {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
-.empty {
-    grid-area: empty;
-    display: none;
+h2 {
+    display: block;
+    font-size: 18px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
 }
 
-.main-container {
+/* --- header ----------------------------------------------------------- */
+
+header.main {
     margin: 0% 10%;
-    height: 100%;
-    position: relative;
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-
-        "header"
-        "filter1"
-        "filter2"
-        "filter3"
-        "main";
-}
-
-.header {
-    grid-area: header;
 }
 
 .logo, .about {
@@ -57,27 +56,30 @@ img {
     font-size: 72px;
 }
 
+.logo img {
+    width: 30%;
+    height: auto;
+}
+
 .about {
     padding-top: 0px
 }
 
-#catcon1 {
-    grid-area: filter1;
+/* --- filter ----------------------------------------------------------- */
+
+ul.categories {
+    width: 80%;
+    text-align: center;
+    margin: 0% 10%;
 }
 
-#catcon2 {
-    grid-area: filter2;
-}
-
-#catcon3 {
-    grid-area: filter3;
+.categories li {
+    display: inline-block;
+    text-align: left;
+    width: calc(100% / 3 - 6px);
 }
 
 select {
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-
     padding: 5px;
     background-color: #d0a4c0;
     width: 100%;
@@ -88,8 +90,7 @@ select {
 option label{
     padding: 5px;
     display: block;
-    font-size: 14px;
-    width: 100%;
+    font-size: 12px;
     position: relative;
     z-index: 2;
 }
@@ -100,114 +101,49 @@ option {
     overflow: hidden;
 }
 
-.item {
+/*--- grid ----------------------------------------------------------- */
+
+ul.tools {
     justify-self: stretch;
 
     display: inline-block;
-    text-align: center;
+    text-align: left;
 
     padding: 10px;
 
     background-color: #fff;
+
+    margin: 0% 10%;
+    height: 100%;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
 }
 
-.img, .title, .info, .description {
-    text-align: left;
-    width: calc(100% - 10px);
-    vertical-align: top;
-    padding: 5px;
-}
-
-.img {
-    height: 24vh;
-    overflow: hidden;
-}
-
-.logo img {
-    width: 30%;
-    height: auto;
-}
-
-.info {
-    display: inline-block;
-    font-size: 12px;
-    color: #d0a4c0;
-    font-weight: 600;
-}
-
-.description {
-    font-size: 14px;
-    width: calc(100% - 20px)
-}
-
-.hide {
-    display: none;
-}
-
-.selected {
-    background-color: blue;
-}
+/* --- responsive ----------------------------------------------------------- */
 
 @media screen and (min-width: 500px) {
-    .main-container{
+    ul.tools{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: 
-        "header header"
-        "filter1 filter1"
-        "filter2 filter2"
-        "filter3 filter3"
-        "main main";
-    }
-
-    .img {
-        height: 16vh;
-    }
-    .empty {
-        display: none;
     }
 }
 
 @media screen and (min-width: 800px) {
-    .main-container{
+    ul.tools{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: 
-        
-        "header header header"
-        "filter1 filter2 filter3"
-        "main main main";
         margin: 0px 10%;
-    }
-    .empty {
-        display: none;
-    }
-    .catcon {
-        margin: 15px;
-    }
-    #catcon1 {
-        margin-left: 0px;
-    }
-    #catcon3 {
-        margin-right: 0px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .main-container{
-        grid-template-columns: auto;
+    ul.tools{
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: 
-        
-        "header header header header"
-        "filter1 filter2 filter3 empty"
-        "main main main main";
         margin: 0px 10%;
-    }
-    .empty {
-        display: inherit;
-    }
-    .about {
-        width: 60%;
     }
 }
