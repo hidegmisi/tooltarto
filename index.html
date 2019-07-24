@@ -26,22 +26,22 @@
             <label for="cost">Ingyenes?</label>
             <select id="cost">
                 <option class="cat" value="összes" selected="selected">összes</option>
-                <option class="cat" id="ingyenes">ingyenes</option>
-                <option class="cat" id="fizetős">fizetős</option>
-                <option class="cat" id="ingyenes/fizetős">ingyenes/fizetős</option>
+                <option class="cat" value="ingyenes">ingyenes</option>
+                <option class="cat" value="fizetős">fizetős</option>
+                <option class="cat" value="ingyenes/fizetős">ingyenes/fizetős</option>
             </select>
         </li>
         <li>
             <label for="where">Hol készült?</label>
             <select id="where">
                 <option class="cat" value="összes" selected="selected">összes</option>
-                <option class="cat" id="magyar">magyar</option>
-                <option class="cat" id="külföldi">külföldi</option>
+                <option class="cat" value="magyar">magyar</option>
+                <option class="cat" value="külföldi">külföldi</option>
             </select>
         </li>
     </ul>
     <ul class="tools">
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatkezelés" data-cost="ingyenes" data-where="magyar">
             <header>
                 <a href="https://carto.com/">
                     <img src="ps/carto_ps.png">
@@ -54,7 +54,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatkezelés" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="http://www.crcb.eu/?cat=6">
                     <img src="ps/crcb_ps.png">
@@ -93,7 +93,7 @@
                 <div class="release">Mikor indult: 2015</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatkezelés" data-cost="ingyenes/fizetős" data-where="magyar">
             <header>
                 <a href="http://www.fizettem.hu/">
                     <img src="ps/fizettem_ps.png">
@@ -106,7 +106,7 @@
                 <div class="release">Mikor indult: 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="keresés" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="https://flourish.studio/">
                     <img src="ps/flourish_ps.png">
@@ -119,7 +119,7 @@
                 <div class="release">Mikor indult: 2016</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="keresés" data-cost="ingyenes" data-where="külföldi">
             <header>
                 <a href="https://datastudio.google.com/">
                     <img src="ps/googledatastudio_ps.png">
@@ -145,7 +145,7 @@
                 <div class="release">Mikor indult: 2001</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
             <header>
                 <a href="https://import.io">
                     <img src="ps/import_ps.png">
@@ -158,7 +158,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
             <header>
                 <a href="https://infogram.com">
                     <img src="ps/infogram_ps.png">
@@ -171,7 +171,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="keresés" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="https://juxtapose.knightlab.com/">
                     <img src="ps/juxtapose_ps.png">
@@ -184,7 +184,7 @@
                 <div class="release">Mikor indult: 2011</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
             <header>
                 <a href="https://kmonitor.hu/adatbazis">
                     <img src="ps/kmonitor_ps.png">
@@ -210,7 +210,7 @@
                 <div class="release">Mikor indult: 2018</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
             <header>
                 <a href="https://kimittud.atlatszo.hu/">
                     <img src="ps/kimittud_ps.png">
@@ -223,7 +223,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes/fizetős" data-where="magyar">
             <header>
                 <a href="https://atlatszo.hu/magyarleaks/">
                     <img src="ps/magyarleaks_ps.png">
@@ -236,7 +236,7 @@
                 <div class="release">Mikor indult: 2011</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatigénylés" data-cost="fizetős" data-where="magyar">
             <header>
                 <a href="https://www.mapbox.com">
                     <img src="ps/mapbox_ps.png">
@@ -249,7 +249,7 @@
                 <div class="release">Mikor indult: 2010</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatigénylés" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="https://mertek.atlatszo.hu/allamihirdetesek/">
                     <img src="ps/mertek_ps.png">
@@ -275,7 +275,7 @@
                 <div class="release">Mikor indult: 2018</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatigénylés" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="http://openrefine.org/">
                     <img src="ps/openrefine_ps.png">
@@ -314,7 +314,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes/fizetős" data-where="külföldi">
             <header>
                 <a href="https://qgis.org/hu/site/">
                     <img src="ps/qgis_ps.png">
@@ -340,7 +340,7 @@
                 <div class="release">Mikor indult: 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
             <header>
                 <a href="https://www.redflags.eu/?lang=hu">
                     <img src="ps/redflags_ps.png">
@@ -353,7 +353,7 @@
                 <div class="release">Mikor indult: 2015</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="idővonal" data-cost="ingyenes" data-where="magyar">
             <header>
                 <a href="https://storymap.knightlab.com/">
                     <img src="ps/storymap_ps.png">
@@ -366,7 +366,7 @@
                 <div class="release">Mikor indult: 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="idővonal" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="https://www.sutori.com/">
                     <img src="ps/sutori_ps.png">
@@ -379,7 +379,7 @@
                 <div class="release">Mikor indult: 2016</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="idővonal" data-cost="fizetős" data-where="külföldi">
             <header>
                 <a href="https://adat.atlatszo.hu/szechenyi2020/">
                     <img src="ps/szechenyi2020_ps.png">
@@ -392,7 +392,7 @@
                 <div class="release">Mikor indult: 2015</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
             <header>
                 <a href="https://www.tableau.com/">
                     <img src="ps/tableau_ps.png">
@@ -405,7 +405,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="magyar">
             <header>
                 <a href="https://tabula.technology/">
                     <img src="ps/tabula_ps.png">
@@ -418,7 +418,7 @@
                 <div class="release">Mikor indult: 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="magyar">
             <header>
                 <a href="https://taokereso.atlatszo.hu/">
                     <img src="ps/taokereso_ps.png">
@@ -431,7 +431,7 @@
                 <div class="release">Mikor indult: 2011</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
             <header>
                 <a href="https://timeline.knightlab.com/">
                     <img src="ps/timeline_ps.png">
@@ -444,7 +444,7 @@
                 <div class="release">Mikor indult: 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="idővonal" data-cost="ingyenes/fizetős" data-where="magyar">
             <header>
                 <a href="https://uvegzseb.hu/">
                     <img src="ps/uvegzseb_ps.png">

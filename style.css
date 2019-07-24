@@ -123,6 +123,14 @@ ul.tools {
 
 }
 
+.tools li {
+    display: none;
+}
+
+.tools li.active {
+    display: block;
+}
+
 /* --- responsive ----------------------------------------------------------- */
 
 @media screen and (min-width: 500px) {
