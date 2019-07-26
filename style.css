@@ -72,10 +72,16 @@ ul.categories {
     margin: 0% 10%;
 }
 
+.categories label {
+    display: block;
+    padding-bottom: 10px;
+}
+
 .categories li {
     display: inline-block;
     text-align: left;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 select {
@@ -100,6 +106,17 @@ option {
     overflow: hidden;
 }
 
+.ss-main .ss-single-selected {
+    background-color: #c7a7bf;
+    border: 0;
+    border-radius: 0;
+    color: black;
+}
+
+.ss-main .ss-single-selected .ss-arrow span {
+    border-color: black;
+}
+
 /*--- grid ----------------------------------------------------------- */
 
 ul.tools {
@@ -121,6 +138,13 @@ ul.tools {
     grid-template-rows: auto;
     grid-gap: 20px;
 
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
 
 .tools li * {
@@ -151,6 +175,7 @@ ul.tools {
 /* --- responsive ----------------------------------------------------------- */
 
 @media screen and (min-width: 500px) {
+    .categories,
     ul.tools{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -162,13 +187,11 @@ ul.tools {
 }
 
 @media screen and (min-width: 800px) {
+    .categories,
     ul.tools{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         margin: 0px 10%;
-    }
-    .categories li {
-        width: calc(100% / 3 - 3px);
     }
     .logo img {
         width: 30%;
@@ -180,6 +203,7 @@ ul.tools {
 }
 
 @media screen and (min-width: 1200px) {
+    .categories,
     ul.tools{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
