@@ -10,18 +10,25 @@
 <body>
     <header class="main">
         <a href="index.html" target="_self"><div class="logo"><a href="index.html" target="_self"><img src="ps/tooltarto.svg" alt=""></div></a>
-        <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Amet nisl suscipit adipiscing bibendum. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. </p>
+        <p class="about">Ezen az oldalon olyan magyar és külföldi eszközöket gyűjtöttünk össze, amelyek megkönnyítik az újságírói vagy civil munkádat legyen szó adatkezelésről, keresésről vagy vizualizációról. 
+        </p>
     </header>
     <ul class="categories">
         <li>
             <label for="type">Mire használható?</label>
             <select id="type"> 
                 <option class="cat" value="összes" selected="selected">összes</option>
+                <option class="cat" value="adatbázis">adatbázis</option>
                 <option class="cat" value="adatkezelés">adatkezelés</option>
-                <option class="cat" value="adatigénylés">adatigénylés</option>
-                <option class="cat" value="keresés">keresés</option>
-                <option class="cat" value="vizualizáció">vizualizáció</option>
+                <option class="cat" value="adatleszedés">adatleszedés</option>
+                <option class="cat" value="adatvizualizáció">adatvizualizáció</option>
+                <option class="cat" value="bejelentés">bejelentés</option>
+                <option class="cat" value="hálózatkészítő">hálózatkészítő</option>
                 <option class="cat" value="idővonal">idővonal</option>
+                <option class="cat" value="képkezelő">képkezelő</option>
+                <option class="cat" value="közérdekű adatigénylés">közérdekű adatigénylés</option>
+                <option class="cat" value="szavazás">szavazás</option>
+                <option class="cat" value="térkép">térkép</option>
             </select>
         </li>
         <li>
@@ -30,20 +37,12 @@
                 <option class="cat" value="összes" selected="selected">összes</option>
                 <option class="cat" value="ingyenes">ingyenes</option>
                 <option class="cat" value="fizetős">fizetős</option>
-                <option class="cat" value="ingyenes/fizetős">ingyenes/fizetős</option>
-            </select>
-        </li>
-        <li>
-            <label for="where">Hol készült?</label>
-            <select id="where">
-                <option class="cat" value="összes" selected="selected">összes</option>
-                <option class="cat" value="magyar">magyar</option>
-                <option class="cat" value="külföldi">külföldi</option>
+                <option class="cat" value="ingyenes és fizetős">ingyenes és fizetős</option>
             </select>
         </li>
     </ul>
     <ul class="tools">
-        <li data-type="adatkezelés" data-cost="ingyenes" data-where="magyar">
+        <li data-type="térkép" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://carto.com/">
                     <img src="ps/carto_ps.png">
@@ -56,7 +55,20 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="adatkezelés" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatvizualizáció" data-cost="ingyenes">
+            <header>
+                <a href="https://www.compr.hu/">
+                    <img src="ps/compr_ps.png">
+                    <h2>Compr</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> K-Monitor</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="http://www.crcb.eu/?cat=6">
                     <img src="ps/crcb_ps.png">
@@ -69,7 +81,20 @@
                 <div class="release"><span>Mikor indult:</span> 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="hálózatkészítő" data-cost="ingyenes">
+            <header>
+                <a href="https://cytoscape.org/">
+                    <img src="ps/cytoscape_ps.png">
+                    <h2>Cytoscape</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> Cytoscape</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="adatvizualizáció" data-cost="ingyenes">
             <header>
                 <a href="https://www.datawrapper.de/">
                     <img src="ps/datawrapper_ps.png">
@@ -82,7 +107,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="szavazás" data-cost="ingyenes">
             <header>
                 <a href="https://evoks.hu/">
                     <img src="ps/evoks_ps.png">
@@ -95,7 +120,20 @@
                 <div class="release"><span>Mikor indult:</span> 2015</div>
             </div>
         </li>
-        <li data-type="adatkezelés" data-cost="ingyenes/fizetős" data-where="magyar">
+        <li data-type="adatbázis" data-cost="ingyenes">
+            <header>
+                <a href="https://k-monitor.github.io/parliamentary_debates_open/">
+                    <img src="ps/felsz_ps.png">
+                    <h2>Felszólaláskereső</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> K-Monitor</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="bejelentés" data-cost="ingyenes">
             <header>
                 <a href="http://www.fizettem.hu/">
                     <img src="ps/fizettem_ps.png">
@@ -108,7 +146,7 @@
                 <div class="release"><span>Mikor indult:</span> 2013</div>
             </div>
         </li>
-        <li data-type="keresés" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatvizualizáció" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://flourish.studio/">
                     <img src="ps/flourish_ps.png">
@@ -121,7 +159,20 @@
                 <div class="release"><span>Mikor indult:</span> 2016</div>
             </div>
         </li>
-        <li data-type="keresés" data-cost="ingyenes" data-where="külföldi">
+        <li data-type="hálózatkészítő" data-cost="ingyenes">
+            <header>
+                <a href="https://gephi.org/">
+                    <img src="ps/gephi_ps.png">
+                    <h2>Gephi</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> Gephi</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://datastudio.google.com/">
                     <img src="ps/googledatastudio_ps.png">
@@ -134,7 +185,7 @@
                 <div class="release"><span>Mikor indult:</span> 2015</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="térkép" data-cost="ingyenes">
             <header>
                 <a href="https://www.google.com/earth/">
                     <img src="ps/googleearth_ps.png">
@@ -147,7 +198,7 @@
                 <div class="release"><span>Mikor indult:</span> 2001</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
+        <li data-type="adatleszedés" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://import.io">
                     <img src="ps/import_ps.png">
@@ -160,7 +211,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
+        <li data-type="adatvizualizáció" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://infogram.com">
                     <img src="ps/infogram_ps.png">
@@ -173,7 +224,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="keresés" data-cost="fizetős" data-where="külföldi">
+        <li data-type="képkezelő" data-cost="ingyenes">
             <header>
                 <a href="https://juxtapose.knightlab.com/">
                     <img src="ps/juxtapose_ps.png">
@@ -186,7 +237,7 @@
                 <div class="release"><span>Mikor indult:</span> 2011</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://kmonitor.hu/adatbazis">
                     <img src="ps/kmonitor_ps.png">
@@ -199,7 +250,7 @@
                 <div class="release"><span>Mikor indult:</span> 2007</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="térkép" data-cost="ingyenes">
             <header>
                 <a href="https://kepler.gl/">
                     <img src="ps/kepler_ps.png">
@@ -212,7 +263,7 @@
                 <div class="release"><span>Mikor indult:</span> 2018</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
+        <li data-type="közérdekű adatigénylés" data-cost="ingyenes">
             <header>
                 <a href="https://kimittud.atlatszo.hu/">
                     <img src="ps/kimittud_ps.png">
@@ -225,7 +276,20 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes/fizetős" data-where="magyar">
+        <li data-type="adatbázis" data-cost="ingyenes">
+            <header>
+                <a href="http://www.kozpenzkereso.eu/">
+                    <img src="ps/kozpenzkereso_ps.png">
+                    <h2>Közpénzkereső</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> CRCB</div>
+                <div class="release"><span>Mikor indult:</span> 2015</div>
+            </div>
+        </li>
+        <li data-type="bejelentés" data-cost="ingyenes">
             <header>
                 <a href="https://atlatszo.hu/magyarleaks/">
                     <img src="ps/magyarleaks_ps.png">
@@ -238,7 +302,7 @@
                 <div class="release"><span>Mikor indult:</span> 2011</div>
             </div>
         </li>
-        <li data-type="adatigénylés" data-cost="fizetős" data-where="magyar">
+        <li data-type="térkép" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://www.mapbox.com">
                     <img src="ps/mapbox_ps.png">
@@ -251,7 +315,7 @@
                 <div class="release"><span>Mikor indult:</span> 2010</div>
             </div>
         </li>
-        <li data-type="adatigénylés" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://mertek.atlatszo.hu/allamihirdetesek/">
                     <img src="ps/mertek_ps.png">
@@ -264,7 +328,7 @@
                 <div class="release"><span>Mikor indult:</span> 2019</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://nertravel.atlatszo.hu/">
                     <img src="ps/nertravel_ps.png">
@@ -277,7 +341,20 @@
                 <div class="release"><span>Mikor indult:</span> 2018</div>
             </div>
         </li>
-        <li data-type="adatigénylés" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
+            <header>
+                <a href="https://data.occrp.org/">
+                    <img src="ps/occrp_ps.png">
+                    <h2>OCCRP Data</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> OCCRB</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="adatkezelés" data-cost="ingyenes">
             <header>
                 <a href="http://openrefine.org/">
                     <img src="ps/openrefine_ps.png">
@@ -290,7 +367,20 @@
                 <div class="release"><span>Mikor indult:</span> 2010</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatkezelés" data-cost="ingyenes és fizetős">
+            <header>
+                <a href="https://pdftables.com/convert-pdf-to-excel">
+                    <img src="ps/pdftables_ps.png">
+                    <h2>PDFTables</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> Sensible Code</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="adatvizualizáció" data-cost="ingyenes">
             <header>
                 <a href="https://plotdb.com/">
                     <img src="ps/plotdb_ps.png">
@@ -303,7 +393,7 @@
                 <div class="release"><span>Mikor indult:</span> 2016</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatvizualizáció" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://plot.ly/">
                     <img src="ps/plotly_ps.png">
@@ -316,7 +406,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes/fizetős" data-where="külföldi">
+        <li data-type="térkép" data-cost="ingyenes">
             <header>
                 <a href="https://qgis.org/hu/site/">
                     <img src="ps/qgis_ps.png">
@@ -329,7 +419,7 @@
                 <div class="release"><span>Mikor indult:</span> 2002</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatvizualizáció" data-cost="ingyenes">
             <header>
                 <a href="https://rawgraphs.io//">
                     <img src="ps/rawgraphs_ps.png">
@@ -342,7 +432,7 @@
                 <div class="release"><span>Mikor indult:</span> 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://www.redflags.eu/?lang=hu">
                     <img src="ps/redflags_ps.png">
@@ -355,7 +445,7 @@
                 <div class="release"><span>Mikor indult:</span> 2015</div>
             </div>
         </li>
-        <li data-type="idővonal" data-cost="ingyenes" data-where="magyar">
+        <li data-type="térkép" data-cost="ingyenes">
             <header>
                 <a href="https://storymap.knightlab.com/">
                     <img src="ps/storymap_ps.png">
@@ -368,7 +458,7 @@
                 <div class="release"><span>Mikor indult:</span> 2013</div>
             </div>
         </li>
-        <li data-type="idővonal" data-cost="fizetős" data-where="külföldi">
+        <li data-type="idővonal" data-cost="fizetős">
             <header>
                 <a href="https://www.sutori.com/">
                     <img src="ps/sutori_ps.png">
@@ -381,7 +471,7 @@
                 <div class="release"><span>Mikor indult:</span> 2016</div>
             </div>
         </li>
-        <li data-type="idővonal" data-cost="fizetős" data-where="külföldi">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://adat.atlatszo.hu/szechenyi2020/">
                     <img src="ps/szechenyi2020_ps.png">
@@ -394,7 +484,7 @@
                 <div class="release"><span>Mikor indult:</span> 2015</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="fizetős" data-where="magyar">
+        <li data-type="adatvizualizáció" data-cost="ingyenes és fizetős">
             <header>
                 <a href="https://www.tableau.com/">
                     <img src="ps/tableau_ps.png">
@@ -407,7 +497,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="magyar">
+        <li data-type="adatkezelés" data-cost="ingyenes">
             <header>
                 <a href="https://tabula.technology/">
                     <img src="ps/tabula_ps.png">
@@ -420,7 +510,7 @@
                 <div class="release"><span>Mikor indult:</span> 2013</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="magyar">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://taokereso.atlatszo.hu/">
                     <img src="ps/taokereso_ps.png">
@@ -433,7 +523,7 @@
                 <div class="release"><span>Mikor indult:</span> 2011</div>
             </div>
         </li>
-        <li data-type="vizualizáció" data-cost="ingyenes" data-where="külföldi">
+        <li data-type="idővonal" data-cost="ingyenes">
             <header>
                 <a href="https://timeline.knightlab.com/">
                     <img src="ps/timeline_ps.png">
@@ -446,7 +536,7 @@
                 <div class="release"><span>Mikor indult:</span> 2012</div>
             </div>
         </li>
-        <li data-type="idővonal" data-cost="ingyenes/fizetős" data-where="magyar">
+        <li data-type="adatbázis" data-cost="ingyenes">
             <header>
                 <a href="https://uvegzseb.hu/">
                     <img src="ps/uvegzseb_ps.png">
@@ -457,6 +547,32 @@
             <div class="info">
                 <div class="creator"><span>Készítette:</span> atlatszo.hu</div>
                 <div class="release"><span>Mikor indult:</span> 2012</div>
+            </div>
+        </li>
+        <li data-type="adatbázis" data-cost="ingyenes">
+            <header>
+                <a href="https://vagyonkereso.hu/vagyonnyilatkozatok">
+                    <img src="ps/vagyonkereso_ps.png">
+                    <h2>Vagyonkereső</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> Direkt36</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
+            </div>
+        </li>
+        <li data-type="hálózatkészítő" data-cost="ingyenes">
+            <header>
+                <a href="https://vis.occrp.org/">
+                    <img src="ps/vis_ps.png">
+                    <h2>VIS</h2>
+                </a>
+            </header>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae mattis mauris, at ultricies mauris. Morbi finibus faucibus neque in aliquam. Vivamus bibendum cursus sapien at dapibus.</p>
+            <div class="info">
+                <div class="creator"><span>Készítette:</span> OCCRP</div>
+                <div class="release"><span>Mikor indult:</span> --</div>
             </div>
         </li>
     </ul>
