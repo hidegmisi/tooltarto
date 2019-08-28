@@ -23,7 +23,6 @@ li {
 }
 
 body {
-    min-height: 200vh;
     height: 100%;
     margin: 0;
 }
@@ -48,7 +47,6 @@ h2 {
 
 header.main {
     margin: 0% 10%;
-    text-align: center;
 }
 
 .logo, .about {
