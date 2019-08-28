@@ -4,6 +4,7 @@
 
 html {
     font-family: 'Roboto';
+    height: 100%;
 }
 
 a {
@@ -23,6 +24,8 @@ li {
 
 body {
     min-height: 200vh;
+    height: 100%;
+    margin: 0;
 }
 
 img {
@@ -45,15 +48,18 @@ h2 {
 
 header.main {
     margin: 0% 10%;
+    text-align: center;
 }
 
 .logo, .about {
+    display: inline-block;
     padding: 20px 0px;
     width: 100%;
 }
 
 .logo {
     font-size: 72px;
+    padding-top: 40px;
 }
 
 .logo img {
@@ -62,7 +68,12 @@ header.main {
 }
 
 .about {
-    padding-top: 0px
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.about a {
+    text-decoration: underline red;
 }
 
 /* --- filter ----------------------------------------------------------- */
@@ -126,11 +137,12 @@ ul.tools {
     text-align: left;
 
     padding-top: 10px;
+    padding-bottom: 30px;
 
     background-color: #fff;
 
     margin: 0% 10%;
-    height: 100%;
+    height: fit-content;
     position: relative;
 
     display: grid;
@@ -153,6 +165,8 @@ ul.tools {
 
 .tools li {
     display: none;
+    position: relative;
+    min-height: 300px;
 }
 
 .tools li h2 {
@@ -161,6 +175,12 @@ ul.tools {
     font-weight: 600;
     text-transform: uppercase; 
     padding-top: 10px;
+}
+
+.tools li .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .tools li .info span {
@@ -172,11 +192,43 @@ ul.tools {
     display: block;
 }
 
+.tools li header a img {
+    height: 16vh;
+    object-fit: cover;
+}
+
+/* --- footer ----------------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    background: #c8c8c8;
+}
+
+footer div {
+    display: inline-block;
+    padding: 40px;
+    color: black;
+}
+
+.legal {
+    text-decoration: underline;
+}
+
+.hiddenlegal {
+    display: none;
+    width: 50%;
+    text-align: center;
+}
 /* --- responsive ----------------------------------------------------------- */
 
 @media screen and (min-width: 500px) {
-    .categories,
-    ul.tools{
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    ul.tools {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
@@ -184,11 +236,14 @@ ul.tools {
         width: 70%;
         height: auto;
     }
+    .getin {
+        grid-column: 1 / 3;
+    }
 }
 
 @media screen and (min-width: 800px) {
     .categories,
-    ul.tools{
+    ul.tools {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         margin: 0px 10%;
@@ -200,11 +255,19 @@ ul.tools {
     .about {
         width: 60%;
     }
+    .getin {
+        grid-column: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .categories,
-    ul.tools{
+    .categories {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: auto;
+        margin: 0px 10%;
+    }
+
+    ul.tools {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         margin: 0px 10%;
