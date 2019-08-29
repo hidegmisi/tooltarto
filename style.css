@@ -241,7 +241,13 @@ footer div {
 }
 
 @media screen and (min-width: 800px) {
-    .categories,
+
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        margin: 0px 10%;
+    }
+
     ul.tools {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -261,7 +267,7 @@ footer div {
 
 @media screen and (min-width: 1200px) {
     .categories {
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         margin: 0px 10%;
     }
